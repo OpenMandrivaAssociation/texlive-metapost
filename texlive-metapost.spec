@@ -1,3 +1,9 @@
+# revision 23089
+# category Package
+# catalog-ctan /graphics/metapost/base
+# catalog-date 2011-06-16 20:29:02 +0200
+# catalog-license lgpl
+# catalog-version 1.212
 Name:		texlive-metapost
 Version:	1.212
 Release:	1
@@ -195,6 +201,7 @@ PostScript or SVG, rather than the bitmaps Metafont creates.
 %doc %{_texmfdir}/doc/man/man1/dvitomp.man1.pdf
 %doc %{_mandir}/man1/mpost.1*
 %doc %{_texmfdir}/doc/man/man1/mpost.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -207,3 +214,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
