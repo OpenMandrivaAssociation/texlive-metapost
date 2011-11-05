@@ -15,8 +15,8 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-kpathsea
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Requires:	texlive-metapost.bin
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
