@@ -1,4 +1,4 @@
-# revision 23089
+# revision 26689
 # category Package
 # catalog-ctan /graphics/metapost/base
 # catalog-date 2011-06-16 20:29:02 +0200
@@ -6,7 +6,7 @@
 # catalog-version 1.212
 Name:		texlive-metapost
 Version:	1.212
-Release:	2
+Release:	3
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
