@@ -1,12 +1,12 @@
-# revision 26689
+# revision 31860
 # category Package
 # catalog-ctan /graphics/metapost/base
-# catalog-date 2011-06-16 20:29:02 +0200
+# catalog-date 2013-06-20 18:08:19 +0200
 # catalog-license lgpl
-# catalog-version 1.212
+# catalog-version 1.803
 Name:		texlive-metapost
-Version:	1.212
-Release:	3
+Version:	1.803
+Release:	1
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
@@ -115,6 +115,10 @@ PostScript or SVG, rather than the bitmaps Metafont creates.
 %{_texmfdistdir}/metapost/support/trfonts.map
 %{_texmfdistdir}/tex/generic/metapost/mproof.tex
 %{_texmfdistdir}/tex/generic/metapost/mpsproof.tex
+%doc %{_mandir}/man1/dvitomp.1*
+%doc %{_texmfdistdir}/doc/man/man1/dvitomp.man1.pdf
+%doc %{_mandir}/man1/mpost.1*
+%doc %{_texmfdistdir}/doc/man/man1/mpost.man1.pdf
 %doc %{_texmfdistdir}/doc/metapost/base/grdemo-doc.pdf
 %doc %{_texmfdistdir}/doc/metapost/base/grdemo.pdf
 %doc %{_texmfdistdir}/doc/metapost/base/index.html
@@ -187,10 +191,6 @@ PostScript or SVG, rather than the bitmaps Metafont creates.
 %doc %{_texmfdistdir}/doc/metapost/base/source-tutorial/previewer.eps
 %doc %{_texmfdistdir}/doc/metapost/base/source-tutorial/previewer.pdf
 %doc %{_texmfdistdir}/doc/metapost/base/source-tutorial/previewer.png
-%doc %{_mandir}/man1/dvitomp.1*
-%doc %{_texmfdir}/doc/man/man1/dvitomp.man1.pdf
-%doc %{_mandir}/man1/mpost.1*
-%doc %{_texmfdir}/doc/man/man1/mpost.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -200,6 +200,6 @@ PostScript or SVG, rather than the bitmaps Metafont creates.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
