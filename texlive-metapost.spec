@@ -1,4 +1,4 @@
-# revision 31860
+# revision 34194
 # category Package
 # catalog-ctan /graphics/metapost/base
 # catalog-date 2013-06-20 18:08:19 +0200
@@ -6,7 +6,7 @@
 # catalog-version 1.803
 Name:		texlive-metapost
 Version:	1.803
-Release:	6
+Release:	7
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
@@ -155,6 +155,7 @@ PostScript or SVG, rather than the bitmaps Metafont creates.
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpgraph.tex
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mplibapi.tex
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpman-app-legacy.tex
+%doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpman-app-numbersystems.tex
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpman-app-optab.tex
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpman-app-refman.tex
 %doc %{_texmfdistdir}/doc/metapost/base/source-manual/mpman-charts.mp
