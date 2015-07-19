@@ -6,7 +6,7 @@
 # catalog-version 1.803
 Name:		texlive-metapost
 Version:	1.803
-Release:	9
+Release:	10
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
