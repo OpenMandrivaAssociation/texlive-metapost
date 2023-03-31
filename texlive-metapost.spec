@@ -1,6 +1,6 @@
 Name:		texlive-metapost
 Version:	62387
-Release:	1
+Release:	2
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
