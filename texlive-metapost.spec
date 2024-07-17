@@ -1,5 +1,5 @@
 Name:		texlive-metapost
-Version:	66815
+Version:	70041
 Release:	1
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
