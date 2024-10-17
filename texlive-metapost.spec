@@ -3,7 +3,7 @@ Version:	70041
 Release:	1
 Summary:	A development of Metafont for creating graphics
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/metapost/base
+URL:		https://www.ctan.org/tex-archive/graphics/metapost/base
 License:	LGPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/metapost.doc.r%{version}.tar.xz
