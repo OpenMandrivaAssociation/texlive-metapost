@@ -14,10 +14,18 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(kpathsea)
 Requires:	texlive(metapost.bin)
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 MetaPost uses a language based on that of Metafont to produce precise
 technical illustrations. Its output is scalable PostScript or SVG,
 rather than the bitmaps Metafont creates.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from metapost:
+Map troff-updmap.map
+TL_DROPIN_EOF
